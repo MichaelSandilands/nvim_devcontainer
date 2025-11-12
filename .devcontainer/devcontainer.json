@@ -8,7 +8,18 @@
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		// Neovim https://github.com/devcontainers-extra/features/tree/main/src/neovim-homebrew
+		"ghcr.io/devcontainers-extra/features/neovim-homebrew:1": {},
+		// Ripgrep https://github.com/devcontainers-extra/features/tree/main/src/ripgrep
+		"ghcr.io/devcontainers-extra/features/ripgrep:1": {},
+		// fd https://github.com/devcontainers-extra/features/tree/main/src/fd
+		"ghcr.io/devcontainers-extra/features/fd:1": {},
+		// npm https://github.com/devcontainers/features/tree/main/src/node
+		// "ghcr.io/devcontainers/features/node:1": {},
+		// Quarto CLI https://github.com/rocker-org/devcontainer-features/tree/main/src/quarto-cli
+		// "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
