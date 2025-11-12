@@ -1,0 +1,26 @@
+name: myenv
+channels:
+  - conda-forge # Recommended channel for broader and up-to-date packages
+  - defaults
+dependencies:
+  # The base image already has Python, but explicitly set a version for clarity and stability
+  - python=3.10
+  - pip
+  
+  # Core Molten and Jupyter Requirements (Installed via Conda for stability)
+  - pynvim
+  - jupyter_client
+  - nbformat
+  - pillow
+  - requests
+  - websocket-client
+  
+  # Rich Output Libraries (Installed via Conda for binary dependency management)
+  - cairosvg
+  - plotly
+  - pyperclip
+  
+  # Use pip only for packages that are typically harder to find in Conda
+  - pip:
+    - pnglatex # For displaying TeX formulas (often easiest via PyPI)
+    - kaleido
