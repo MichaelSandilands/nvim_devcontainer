@@ -21,6 +21,12 @@
 		// "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
 	},
 
+	"mounts": [
+		// Mount the Neovim configuration from the local .devcontainer folder
+		// to the user's config directory in the container (~/.config/nvim)
+		"source=${localWorkspaceFolder}/.devcontainer/nvim/,target=/home/vscode/.config/nvim,type=bind,consistency=consistent"
+	],
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
