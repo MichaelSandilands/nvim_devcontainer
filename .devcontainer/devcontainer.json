@@ -7,6 +7,10 @@
 		"dockerfile": "Dockerfile"
 	}
 
+	"containerEnv": {
+		"CONDA_DEFAULT_ENV": "myenv"
+	},
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		// Neovim https://github.com/devcontainers-extra/features/tree/main/src/neovim-homebrew
@@ -16,7 +20,7 @@
 		// fd https://github.com/devcontainers-extra/features/tree/main/src/fd
 		"ghcr.io/devcontainers-extra/features/fd:1": {},
 		// npm https://github.com/devcontainers/features/tree/main/src/node
-		// "ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
 		// Quarto CLI https://github.com/rocker-org/devcontainer-features/tree/main/src/quarto-cli
 		// "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {},
 	},
