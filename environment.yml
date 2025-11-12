@@ -14,6 +14,7 @@ dependencies:
   - pillow
   - requests
   - websocket-client
+  - ipykernel
   
   # Rich Output Libraries (Installed via Conda for binary dependency management)
   - cairosvg
